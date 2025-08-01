@@ -5,10 +5,10 @@ services:
     plan: free
     buildCommand: |
       apt-get update && apt-get install -y ffmpeg
-      pyenv install 3.10.13
-      pyenv global 3.10.13
       pip install -r requirements.txt
     startCommand: python video_translator_bot_fixed.py
     envVars:
       - key: BOT_TOKEN
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.10.13
