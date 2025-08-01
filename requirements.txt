@@ -1,0 +1,6 @@
+python-telegram-bot==13.15
+googletrans==3.1.0a0
+ffmpeg-python
+openai-whisper
+moviepy
+Pillow
